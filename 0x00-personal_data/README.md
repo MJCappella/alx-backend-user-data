@@ -10,8 +10,6 @@ This project contains tasks for learning to protect a user's personal data.
     + `redaction`: a string representing by what the field will be obfuscated.
     + `message`: a string representing the log line.
     + `separator`: a string representing by which character is separating all fields in the log line (`message`).
-  + The function should use a regex to replace occurrences of certain field values.
-  + `filter_datum` should be less than 5 lines long and use `re.sub` to perform the substitution with a single regex.
 
 + [x] 1. **Log formatter**<br/>[filtered_logger.py](filtered_logger.py) contains the following updates:
   + Copy the following code into [filtered_logger.py](filtered_logger.py).
