@@ -18,15 +18,9 @@ This project contains tasks for learning to protect a user's personal data.
   + Implements a `get_logger` function that takes no arguments and returns a `logging.Logger` object.
 
 + [x] 3. **Connect to secure database**<br/>[filtered_logger.py](filtered_logger.py) contains the following updates:
-  + **INFO**:Database credentials should **NEVER** be stored in code or checked into version control. One secure option is to store them as environment variable on the application server.
-  + In this task, you will connect to a secure `holberton` database to read a `users` table. The database is protected by a username and password that are set as environment variables on the server named as follows:
-    + `PERSONAL_DATA_DB_USERNAME` (set the default as “root”).
-    + `PERSONAL_DATA_DB_PASSWORD` (set the default as an empty string).
-    + `PERSONAL_DATA_DB_HOST` (set the default as “localhost”).
-  + The database name is stored in `PERSONAL_DATA_DB_NAME`.
-  + Implement a `get_db` function that returns a connector to the database (`mysql.connector.connection.MySQLConnection` object).
-    + Use the `os` module to obtain credentials from the environment.
-    + Use the module `mysql-connector-python` to connect to the MySQL database (`pip3 install mysql-connector-python`).
+  + Implements a `get_db` function that returns a connector to the database (`mysql.connector.connection.MySQLConnection` object).
+    + Uses the `os` module to obtain credentials from the environment.
+    + Uses the module `mysql-connector-python` to connect to the MySQL database (`pip3 install mysql-connector-python`).
 
 + [x] 4. **Read and filter data**<br/>[filtered_logger.py](filtered_logger.py) contains a `main` function that takes no arguments and returns nothing with the following requirements:
   + The function will obtain a database connection using `get_db` and retrieve all rows in the `users` table and display each row under a filtered format like this:
