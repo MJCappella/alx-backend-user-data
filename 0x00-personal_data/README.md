@@ -24,7 +24,6 @@ This project contains tasks for learning to protect a user's personal data.
 
 + [x] 4. **Read and filter data**<br/>[filtered_logger.py](filtered_logger.py) contains a `main` function that takes no arguments and returns nothing with the following requirements:
   + The function will obtain a database connection using `get_db` and retrieve all rows in the `users` table and display each row under a filtered format.
-  + Only your `main` function should run when the module is executed.
 
 + [x] 5. **Encrypting passwords**<br/>[encrypt_password.py](encrypt_password.py) contains a script that meets the following requirements:
   + Implements a `hash_password` function that expects one string argument name password and returns a salted, hashed password, which is a byte string.
