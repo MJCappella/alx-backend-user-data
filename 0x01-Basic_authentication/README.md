@@ -52,7 +52,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
     + This class is the template for all authentication system you will implement.
 
 + [x] 4. **Define which routes don't need authentication**
-  + Update the method `def require_auth(self, path: str, excluded_paths: List[str]) -> bool:` in `Auth` in [api/v1/auth/auth.py](api/v1/auth/auth.py) that returns `True` if the path is not in the list of strings `excluded_paths`:
+  + Updates the method `def require_auth(self, path: str, excluded_paths: List[str]) -> bool:` in `Auth` in [api/v1/auth/auth.py](api/v1/auth/auth.py) that returns `True` if the path is not in the list of strings `excluded_paths`:
     + Returns `True` if path is `None`.
     + Returns `True` if `excluded_paths` is `None` or empty.
     + Returns `False` if path is in `excluded_paths`.
