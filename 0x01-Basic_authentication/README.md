@@ -87,8 +87,8 @@ This project contains tasks for learning to authenticate a user using the Basic 
 
 + [x] 7. **Basic - Base64 part**
   + Add the method `def extract_base64_authorization_header(self, authorization_header: str) -> str:` in the class `BasicAuth` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) that returns the Base64 part of the `Authorization` header for a Basic Authentication:
-    + Return None if `authorization_header` is `None`.
-    + Return None if `authorization_header` is not a string.
+    + Returns None if `authorization_header` is `None`.
+    + Returns None if `authorization_header` is not a string.
     + Return None if `authorization_header` doesn't start by `Basic` (with a space at the end).
     + Otherwise, return the value after `Basic` (after the space).
     + You can assume `authorization_header` contains only one `Basic`.
