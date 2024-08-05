@@ -128,7 +128,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
   + With this update, now your API is fully protected by a Basic Authentication. Enjoy!
 
 + [x] 12. **Basic - Allow password with ":"**
-  + Improve the method `def extract_user_credentials(self, decoded_base64_authorization_header)` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) to allow password with `:`.
+  + Improves the method `def extract_user_credentials(self, decoded_base64_authorization_header)` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) to allow password with `:`.
 
 + [x] 13. **Require auth with stars**
   + Improved `def require_auth(self, path, excluded_paths)` in [api/v1/auth/auth.py](api/v1/auth/auth.py) by allowing `*` at the end of excluded paths:
