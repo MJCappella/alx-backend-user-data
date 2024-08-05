@@ -29,7 +29,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
 
 + [x] 2. **Error handler: Forbidden**
   + Edit [api/v1/app.py](api/v1/app.py):
-    + Add a new error handler for this status code, the response must be:
+    + Adds a new error handler for this status code, the response must be:
       + A JSON: `{"error": "Forbidden"}`.
       + Status code `403`.
       + You must use `jsonify` from Flask.
