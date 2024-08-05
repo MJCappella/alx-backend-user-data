@@ -131,7 +131,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
   + Improve the method `def extract_user_credentials(self, decoded_base64_authorization_header)` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) to allow password with `:`.
 
 + [x] 13. **Require auth with stars**
-  + Improve `def require_auth(self, path, excluded_paths)` in [api/v1/auth/auth.py](api/v1/auth/auth.py) by allowing `*` at the end of excluded paths:
+  + Improved `def require_auth(self, path, excluded_paths)` in [api/v1/auth/auth.py](api/v1/auth/auth.py) by allowing `*` at the end of excluded paths:
     + Example for `excluded_paths = ["/api/v1/stat*"]`:
       + `/api/v1/users` will return `True`.
       + `/api/v1/status` will return `False`.
