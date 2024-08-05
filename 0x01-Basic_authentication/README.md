@@ -95,9 +95,9 @@ This project contains tasks for learning to authenticate a user using the Basic 
 
 + [x] 8. **Basic - Base64 decode**
   + Add the method `def decode_base64_authorization_header(self, base64_authorization_header: str) -> str:` in the class `BasicAuth` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) that returns the decoded value of a Base64 string `base64_authorization_header`:
-    + Return `None` if `base64_authorization_header` is `None`.
-    + Return `None` if `base64_authorization_header` is not a string.
-    + Return `None` if `base64_authorization_header` is not a valid Base64 - you can use `try/except`.
+    + Returns `None` if `base64_authorization_header` is `None`.
+    + Return s`None` if `base64_authorization_header` is not a string.
+    + Returns `None` if `base64_authorization_header` is not a valid Base64 - you can use `try/except`.
     + Otherwise, return the decoded value as UTF8 string - you can use `decode('utf-8')`.
 
 + [x] 9. **Basic - User credentials**
