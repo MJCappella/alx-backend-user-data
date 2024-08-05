@@ -69,8 +69,8 @@ This project contains tasks for learning to authenticate a user using the Basic 
     + Create a variable `auth` initialized to None after the `CORS` definition.
     + Based on the environment variable `AUTH_TYPE`, load and assign the right instance of authentication to `auth`:
       + If `auth`:
-        + Import `Auth` from `api.v1.auth.auth`.
-        + Create an instance of `Auth` and assign it to the variable `auth`.
+        + Imports `Auth` from `api.v1.auth.auth`.
+        + Creates an instance of `Auth` and assign it to the variable `auth`.
   + Now the biggest piece is the filtering of each request. For that you will use the Flask method `before_request`:
     + Add a method in [api/v1/app.py](api/v1/app.py) to handler `before_request`
       + If `auth` is `None`, do nothing.
