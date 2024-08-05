@@ -61,7 +61,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
 
 + [x] 5. **Request validation!**
   + Now you will validate all requests to secure the API.
-  + Update the method `def authorization_header(self, request=None) -> str:` in [api/v1/auth/auth.py](api/v1/auth/auth.py):
+  + Updates the method `def authorization_header(self, request=None) -> str:` in [api/v1/auth/auth.py](api/v1/auth/auth.py):
     + If request is `None`, returns `None`.
     + If `request` doesn't contain the header key `Authorization`, returns `None`.
     + Otherwise, return the value of the header request Authorization.
