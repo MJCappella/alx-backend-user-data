@@ -96,7 +96,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
 + [x] 8. **Basic - Base64 decode**
   + Add the method `def decode_base64_authorization_header(self, base64_authorization_header: str) -> str:` in the class `BasicAuth` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) that returns the decoded value of a Base64 string `base64_authorization_header`:
     + Returns `None` if `base64_authorization_header` is `None`.
-    + Return s`None` if `base64_authorization_header` is not a string.
+    + Returns `None` if `base64_authorization_header` is not a string.
     + Returns `None` if `base64_authorization_header` is not a valid Base64 - you can use `try/except`.
     + Otherwise, return the decoded value as UTF8 string - you can use `decode('utf-8')`.
 
@@ -111,10 +111,10 @@ This project contains tasks for learning to authenticate a user using the Basic 
 
 + [x] 10. **Basic - User object**
   + Adds the method `def user_object_from_credentials(self, user_email: str, user_pwd: str) -> TypeVar('User'):` in the class `BasicAuth` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) that returns the `User` instance based on the user's email and password.
-    + Return `None` if `user_email` is `None` or not a string.
-    + Return `None` if `user_pwd` is `None` or not a string.
-    + Return `None` if your database (file) doesn't contain any `User` instance with email equal to `user_email` - you should use the class method `search` of the `User` to lookup the list of users based on their email. Don't forget to test all cases: "what if there is no user in DB?", etc.
-    + Return `None` if `user_pwd` is not the password of the `User` instance found - you must use the method `is_valid_password` of `User`.
+    + Returns `None` if `user_email` is `None` or not a string.
+    + Returns `None` if `user_pwd` is `None` or not a string.
+    + Returns `None` if your database (file) doesn't contain any `User` instance with email equal to `user_email` - you should use the class method `search` of the `User` to lookup the list of users based on their email. Don't forget to test all cases: "what if there is no user in DB?", etc.
+    + Returns `None` if `user_pwd` is not the password of the `User` instance found - you must use the method `is_valid_password` of `User`.
     + Otherwise, return the `User` instance.
 
 + [x] 11. **Basic - Overload current_user - and BOOM!**
