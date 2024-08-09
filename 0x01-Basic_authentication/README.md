@@ -137,4 +137,3 @@ This project contains tasks for learning to authenticate a user using the Basic 
       + `/api/v1/status` will return `False`.
       + `/api/v1/stats` will return `False`.
 
-
