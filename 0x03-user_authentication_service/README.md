@@ -2,6 +2,8 @@
 
 This project contains tasks for learning to create a user authentication service.
 
+<img src="0x03-user_authentication_service/pic">
+
 ## Requirements
 
 + SQLAlchemy 1.3.x
