@@ -2,7 +2,7 @@
 
 This project contains tasks for learning to create a user authentication service.
 
-<img src="0x03-user_authentication_service/pic/userauthmeme.jpg">
+<img src="pic/userauthmeme.jpg">
 
 ## Requirements
 
